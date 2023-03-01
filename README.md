@@ -12,6 +12,7 @@
 API
 
 python-telegram-bot
+
 ## Установка:
 
 ### В виртуальное окружение
@@ -38,7 +39,7 @@ TOKEN=<ваш токен>
 
 git clone git@github.com:ivan18258/Kittibot.git
 
-- перейти в папку с проектом
+- Перейти в папку с проектом
 
 cd /kittibot
 
@@ -46,7 +47,7 @@ cd /kittibot
 
 TOKEN=<ваш токен>
 
-- выполнить команды:
+- Выполнить команды:
 
 docker build -t kittibot .
 

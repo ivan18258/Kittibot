@@ -23,7 +23,7 @@ git clone git@github.com:ivan18258/Kittibot.git
 
 - Cоздать и активировать окружающую среду
 
-- Установить зависимости из файла requirements.txt
+- Установить зависимости из файла requirements.txt:
 
 pip install -r requirements.txt
 
@@ -35,11 +35,11 @@ TOKEN=<ваш токен>
 
 ### Запуск в контейнере
 
-- клонировать репозиторий 
+- Клонировать репозиторий:
 
 git clone git@github.com:ivan18258/Kittibot.git
 
-- Перейти в папку с проектом
+- Перейти в папку с проектом:
 
 cd /kittibot
 

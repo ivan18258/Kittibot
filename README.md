@@ -39,6 +39,10 @@ git clone git@github.com:ivan18258/Kittibot.git
 
 cd /kittibot
 
+- Добавить файл .env c указанием токена Вашего телеграмбота в виде:
+
+TOKEN=<ваш токен>
+
 - выполнить команды:
 
 docker build -t kittibot .

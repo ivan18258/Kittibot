@@ -21,12 +21,10 @@ URL = 'https://api.thecatapi.com/v1/images/search'
 
 
 def get_new_image():
+    """ Получение фото по API. """
     try:
         response = requests.get(URL)
     except Exception as error:
-        # Печатать информацию в консоль теперь не нужно:
-        # всё необходимое будет в логах
-        # print(error)
         logging.error(f'Ошибка при запросе к основному API: {error}')
         new_url = 'https://api.thedogapi.com/v1/images/search'
         response = requests.get(new_url)
@@ -37,11 +35,13 @@ def get_new_image():
 
 
 def new_cat(update, context):
+    """ Отправка фото в чат от которго пришел запрос. """
     chat = update.effective_chat
     context.bot.send_photo(chat.id, get_new_image())
 
 
 def wake_up(update, context):
+    """ Старт и загрузка кнопок. """
     chat = update.effective_chat
     name = update.message.chat.first_name
     button = ReplyKeyboardMarkup([['/newcat']], resize_keyboard=True)
